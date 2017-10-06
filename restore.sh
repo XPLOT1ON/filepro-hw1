@@ -18,11 +18,8 @@ then
   rm -rf "$CURRENT_DIR"
 fi
 
-echo $DIR
 mkdir -p $CURRENT_DIR/$DIR
 cp -r "$BACKUP_DIR/$DIR" "$CURRENT_DIR"
-mv "$CURRENT_DIR/$DIR" "$CURRENT_DIR/$WORK_TO_RECOVER"
+cd "$CURRENT_DIR"
+mv "$DIR" "$WORK_TO_RECOVER"
 echo "$WORK_TO_RECOVER has been restored to ./recovered/$WORK_TO_RECOVER"
-
-# mkdir -p $CURRENT_DIR/$DIR
-# cp $BACKUP_DIR/$DIR $CURRENT_DIR/$DIR

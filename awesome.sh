@@ -2,7 +2,7 @@
 
 IS_NUM="^[0-9]+"
 
-if ! [ ${1// } ] || [ "$1" == "--help" ] || [ "$1" =~ $IS_NUM ]
+if ! [ ${1// } ] || [ "$1" == "--help" ]
 then
   echo "Usage: { ./awesome.sh size }"
 else
