@@ -1,4 +1,5 @@
 git.txt
-a1.pdf
+*.pdf
 .DS_Store
 recovered/
+*.zip
